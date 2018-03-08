@@ -1,6 +1,7 @@
 import React, { Component, button } from 'react';
 import logo from './judgehat.png';
 import './App.css';
+import './general.css';
 
 class App extends Component {
   render() {
@@ -11,11 +12,10 @@ class App extends Component {
           <h1 className="App-title">Just about Right</h1>
         </header>
         
-        <div className = "left-but">
-          <button color="primary" disabled={true}>111111</button>
-        </div>
-        <div className = "right-but" >
-          <button color="primary" disabled={true}>222222</button>          
+        <div class="grid-container">
+            <button className = "SiteButton" color="primary" disabled={true}>111111</button>
+
+            <button className = "SiteButton" color="primary" disabled={true}>222222</button>          
         </div>
       </div>
     );
