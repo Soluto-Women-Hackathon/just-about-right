@@ -8,22 +8,16 @@ import KnowYourRights from './KnowYourRights.js';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state ={ pageNumber: 1, xx: 'aaaaa'};
-   // this.onButtonClick = this.onButtonClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-
-  onButtonClick(num, str) {
-    //e.preventDefault();
-    this.setState({
-      pageNumber: num,
-      xx: str
-    });
-    // console.log('x is: ' ,num);
-    // alert(num);    
+  handleClick(e) {
+    e.preventDefault();
+    alert('The link was clicked.');
+    return(
+      <KnowYourRights/>
+    );
   } 
-
-
 
   render() {
     return (
@@ -34,13 +28,9 @@ class App extends Component {
         </header>
         
         <div className="grid-container">
-            <button className = "SiteButton" color="primary" onClick={this.onButtonClick.bind(this, 2, 'hiii')} >Know your rights</button>
-            <button className = "SiteButton" color="primary" onClick={this.onButtonClick.bind(this, 3, 'byye')} >Get help</button>          
-            
+            <button className = "SiteButton" color="primary" onClick={this.handleClick} >Know your rights</button>
+            <button className = "SiteButton" color="primary" onClick={this.handleClick} >Get help</button>          
         </div>
-
-        <div > {this.state.pageNumber} </div>
-        <div > {this.state.xx} </div>
         
       </div>
     );
