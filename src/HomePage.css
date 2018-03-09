@@ -1,0 +1,26 @@
+.LegalHelpHomePage {
+    background-color: #ccccb3;
+}
+.HomePage-header{
+    background-color:  #b3cccc;
+    font-size: 4em;
+    font-family: fantasy;
+    text-align: center;
+    padding: 30px 50px;
+    margin: 20px;
+}
+.HomePage-button {
+    font-family: Calibri;
+     text-align: center;
+     font-size: 1.5em;
+     display: inline-block;
+    background-color: #00cccc;
+    margin: 20px;
+    padding: 15px 32px;
+    border-radius: 15px;
+    border: none;
+    width: 300px;
+    height: 65; 
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
